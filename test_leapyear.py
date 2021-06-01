@@ -5,3 +5,5 @@ def test_is_leapyear():
     assert leapyear.is_leapyear(2020)
 def test_is_leapyear2():
     assert leapyear.is_leapyear(1800) == False
+def test_is_leapyear3():
+    assert leapyear.is_leapyear(2000)

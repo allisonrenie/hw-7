@@ -3,7 +3,11 @@ def is_leapyear(year):
     if byFour == 0:
         by100 = int(year % 100)
         if by100 == 0:
-            return False
+            by400 = int(year % 400)
+            if by400 == 0:
+                return True
+            else:
+                return False
         else:
             return True
     else:
